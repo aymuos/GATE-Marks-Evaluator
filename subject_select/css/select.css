@@ -1,0 +1,89 @@
+
+.wide{
+    display: grid;
+}
+.select-menu{
+    display: block;
+    margin: 0px;
+    margin-right: 0px !important;
+    color:#060808;
+    width: 500px;
+    max-height: 200px;
+    overflow: auto;
+    padding-left: 0px;
+}
+.select-menu li{
+    padding-top: 1.1rem ;
+    padding-bottom: 1.1rem ;
+    display: flex;
+    background-color:#ffffff;
+}
+.select-menu li>div{
+    flex-grow: 1;
+    
+}
+.select-menu li>input[type="checkbox"]{
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    cursor: pointer;
+}
+.select-menu li:hover{
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+
+.search-container {
+    width: 500px;
+    height: 48px;
+    display: block;
+}
+
+input#search-bar {
+    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+    padding: 0px 20px;
+    font-size: 1rem;
+    border: 1px solid #D0CFCE;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input#search-bar:focus {
+    border: 1px solid #008ABF;
+    transition: 0.35s ease;
+    color: #008ABF;
+}
+
+input#search-bar:focus::-moz-placeholder {
+    transition: opacity 0.45s ease;
+    opacity: 0;
+}
+
+input#search-bar:focus:-ms-placeholder {
+    transition: opacity 0.45s ease;
+    opacity: 0;
+}
+
+.search-icon {
+    width: 75px;
+    height: 75px;
+    top: -62px;
+    left: 10px;
+  }
+
+.cancel-icon{
+    width: 30px;
+    height: 30px;
+    top: -37px;
+    left: -10px;
+}
+
+.icon{
+    position: relative;
+    float: right;
+}
+
+
+

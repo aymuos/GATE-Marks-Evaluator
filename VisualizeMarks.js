@@ -29,7 +29,7 @@ function set_cumulative(){
 		window.is_cumulative = true;
 	}
 	window.is_revcumulative = false;
-	if ($("#counts-revcumulative").is(":checked")){
+	if ($("#counts-revcumulative").is(":checked")){ 
 		window.is_revcumulative = true;
 	}
 

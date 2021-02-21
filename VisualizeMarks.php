@@ -5,61 +5,103 @@
     <title>Estimate GATE 2016 Rank | See How Others Performed | Gateoverflow.in</title>
     <!-- http://www.webgeekly.com/tutorials/jquery/how-to-switch-css-files-on-the-fly-using-jquery/ -->
     <link id="dynamic-css" rel="stylesheet" type="text/css" href="visualizeMarks-dark.css">
+    <link rel="stylesheet" type="text/css" href="subject_select/css/select.css">
 </head>
 <body>
     <div align="center" id="top-float">
         <table width="80%">
+
+
             <tr>
-            <td><table class="top-tables">
-                <tr>
-                    <th>My Marks</th>
-                    <td>
-                        <input type="text" style="width: 55%" id="my-marks" value="<?php if(isset($_GET["marks"])){echo $_GET["marks"];} ?>" oninput="calculate();">
-                    </td> <br/>
-                </tr>
-                <tr><td colspan="2"><a href="index.php" class="top-float">(Click here to view your marks)</a></td></tr>
-                <tr>
-                    <th>My Set</th>
-                    <td>
-                        <span>
-                            <input type="radio" name="my-set" class="radio" id="radio1" value="5" checked onclick="calculate();">
-                            <label for="radio1">1</label>
-                        </span><br />
-                        <span>
-                            <input type="radio" name="my-set" class="radio" id="radio2" value="6" onclick="calculate();">
-                            <label for="radio2">2</label>
-                        </span>
-                    </td>
-                </tr>
-            </table></td>
-            <td><table class="top-tables">
-                <tr>
-                    <th style="text-align: right;">Normalized marks</th>
-                    <th id="normalized-marks"></th>
-                </tr>
-                <tr>
-                    <th style="text-align: right;">Qualifying Marks</th>
-                    <th id="qualifying-marks"></th>
-                </tr>
-                <tr>
-                    <th style="text-align: right;">Score</th>
-                    <th id="score"></th>
-                </tr>
-            </table></td>
-            <td><table class="top-tables">
-                <tr>
-                    <th style="text-align: right;">Rank Estimate</th>
-                    <th id="rank-estimate"></th>
-                </tr>
-                <tr>
-                    <th style="text-align: right;">Rank Normalized</th>
-                    <th id="rank-normalized"></th>
-                </tr>
-                <tr>
-                    <th style="text-align: right;">Rank in Set</th>
-                    <th id="rank-set"></th>
-                </tr>
-            </table></td>
+                <td> 
+                    <div>
+            
+                        <p>SELECT SUBJECT FROM THE LIST </p>
+                            <div class="wide">
+                            
+                                <form class="search-container">
+                                    <input type="text" id="search-bar" placeholder="What can I help you with today?"/>
+                                    <a href="#"><img class="search-icon icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+                                    <a href="#"><img class="cancel-icon icon" src="./subject_select/img/cancel-icon.svg" style="display: none;"></a>
+                                </form>
+                                <ul class="select-menu">
+
+
+
+                                    <li data-value="Physics">
+                                        <input type="checkbox"/>
+                                        <div>Physics</div>
+                                    </li>
+                                    <li data-value="Maths"><input type="checkbox"/><div>Maths</div></li>
+                                    <li data-value="iwhiw"><input type="checkbox"/><div>ljeorpibife</div></li>
+                                    <li data-value="tybfibi"><input type="checkbox"/><div>ooibboa</div></li>
+                                    <li data-value="iwnbgibc"><input type="checkbox"/><div>pnbcaahw</div></li>
+                                    <li data-value="lllpefincc"><input type="checkbox"/><div>wpjnnn</div></li>
+                                    <li data-value="poninas"><input type="checkbox"/><div>ojoff oihfpoj</div></li>
+                                    <li data-value="OUnit"><input type="checkbox"/>Operation Unit</li>
+                                    <li data-value="dogge"><input type="checkbox"/>ShibuDoggie</li>
+                                    <li data-value="cat"><input type="checkbox"/>Meowm</li>
+                                    <li data-value="pontiac"><input type="checkbox"/>GT2 Firebird TransAM</li>
+                                    <li data-value=cse"><input type="checkbox"/>Computer Science</li>
+                                    <li data-value="ceramics"><input type="checkbox"/>Ceramic Technology</li>
+                                    <li data-value="heattransfer"><input type="checkbox"/>HotAtoCOldB</li>
+                                </ul>
+                            </div>
+                    </div>
+                <hr />
+                </td>
+            </tr>
+            <tr>
+                <td><table class="top-tables">
+                    <tr>
+                        <th>My Marks</th>
+                        <td>
+                            <input type="text" style="width: 55%" id="my-marks" value="<?php if(isset($_GET["marks"])){echo $_GET["marks"];} ?>" oninput="calculate();">
+                        </td> <br/>
+                    </tr>
+                    <tr><td colspan="2"><a href="index.php" class="top-float">(Click here to view your marks)</a></td></tr>
+                    <tr>
+                        <th>My Set</th>
+                        <td>
+                            <span>
+                                <input type="radio" name="my-set" class="radio" id="radio1" value="5" checked onclick="calculate();">
+                                <label for="radio1">1</label>
+                            </span><br />
+                            <span>
+                                <input type="radio" name="my-set" class="radio" id="radio2" value="6" onclick="calculate();">
+                                <label for="radio2">2</label>
+                            </span>
+                        </td>
+                    </tr>
+                </table></td>
+                <td><table class="top-tables">
+                    <tr>
+                        <th style="text-align: right;">Normalized marks</th>
+                        <th id="normalized-marks"></th>
+                    </tr>
+                    <tr>
+                        <th style="text-align: right;">Qualifying Marks</th>
+                        <th id="qualifying-marks"></th>
+                    </tr>
+                    <tr>
+                        <th style="text-align: right;">Score</th>
+                        <th id="score"></th>
+                    </tr>
+                </table></td>
+                <td><table class="top-tables">
+                    <tr>
+                        <th style="text-align: right;">Rank Estimate</th>
+                        <th id="rank-estimate"></th>
+                    </tr>
+                    <tr>
+                        <th style="text-align: right;">Rank Normalized</th>
+                        <th id="rank-normalized"></th>
+                    </tr>
+                    <tr>
+                        <th style="text-align: right;">Rank in Set</th>
+                        <th id="rank-set"></th>
+                    </tr>
+                </table></td>
             </tr>
         </table>
     </div><hr />
@@ -155,6 +197,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="VisualizeMarks.js"></script>
     <script src="raw_data.js"></script>
+    <script src="subject_select/js/select.js"></script>
     <script>
         window.raw_data = window.raw_data.split(/\s+/);
         $("#radio<?php if(isset($_GET["set"])){echo $_GET["set"];}else{echo 1;}?>").prop("checked", true);
