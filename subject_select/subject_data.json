@@ -6,39 +6,39 @@
         },
         {
             "id":2,
-            "name":"Maths"
+            "name":"Engineering Mathmatics"
         },
         {
             "id":3,
-            "name":"eriw odjwp"
+            "name":"Theory of Computation"
         },
         {
             "id":4,
-            "name":"dwiib ihiaoub"
+            "name":"Engineering Drawing"
         },
         {
             "id":5,
-            "name":"elfiob rihgi"
+            "name":"Compiler Design"
         },
         {
             "id":7,
-            "name":"ljpojfi pojeinf"
+            "name":"Computer Networks"
         },
         {
             "id":8,
-            "name":"rygbiobgr iohebufub"
+            "name":"Digital Electronics"
         },
         {
             "id":9,
-            "name":"ojfprojein ienfirob"
+            "name":"Information and Coding Theory"
         },
         {
             "id":10,
-            "name":"bnmkmdi ifirifr"
+            "name":"Computer Organisation"
         },
         {
             "id":11,
-            "name":"kkkkk kkkkkkkk"
+            "name":"Computer Architecture"
         }
     ]
 }
